@@ -1,0 +1,6 @@
+<div>
+  <button (click)="onSelectedUser()" [class.active]="isSelected">
+    <img [ngSrc]="userAvatar" [alt]="imageAlt" height="32" width="32">
+    <span>{{ userName }}</span>
+  </button>
+</div>

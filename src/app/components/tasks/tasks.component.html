@@ -1,0 +1,18 @@
+<section id="tasks">
+  <header>
+    <h2>{{selectedUser.name}}'s Tasks</h2>
+    <menu>
+      <button (click)="opAddTask()">Add Task</button>
+    </menu>
+  </header>
+
+  @if (isFormOpen) {
+    <app-task-form></app-task-form>
+  }
+
+  <ul>
+    @for (task of userTasks; track task.id) {
+      <li><app-task [task]="task" (complete) ='onComplete($event)' /></li>
+    }
+  </ul>
+</section>
