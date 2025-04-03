@@ -3,6 +3,7 @@ import { User } from "../../types/user";
 import { TaskComponent } from "../task/task.component";
 import { DUMMY_TASKS } from "../../data/dummy-tasks";
 import { TaskFormComponent } from "../task-form/task-form.component";
+import { SubmitData } from "../../types/submit-data";
 
 @Component({
   selector: 'app-tasks',
@@ -28,7 +29,23 @@ export class TasksComponent {
     this.tasks = this.tasks.filter(({id}) => id !== taskId);
   }
 
-  opAddTask() {
+  onAddTask() {
     this.isFormOpen = true;
+  }
+
+  onCloseForm () {
+    this.isFormOpen = false;
+  }
+
+  onSumbitForm(data: SubmitData) {
+    this.tasks.push({
+      id: new Date().getTime().toString(),
+      userId: this.selectedUser.id,
+      title: data.title,
+      summary: data.summary,
+      dueDate: data.date
+    })
+
+    this.isFormOpen = false;
   }
 }

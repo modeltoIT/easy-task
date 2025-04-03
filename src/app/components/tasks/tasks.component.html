@@ -2,12 +2,12 @@
   <header>
     <h2>{{selectedUser.name}}'s Tasks</h2>
     <menu>
-      <button (click)="opAddTask()">Add Task</button>
+      <button (click)="onAddTask()">Add Task</button>
     </menu>
   </header>
 
   @if (isFormOpen) {
-    <app-task-form></app-task-form>
+    <app-task-form (close)="onCloseForm()" (submit)="onSumbitForm($event)" />
   }
 
   <ul>
