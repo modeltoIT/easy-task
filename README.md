@@ -1,27 +1,44 @@
-# Essentials
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+# EasyTask
 
-## Development server
+A task management app built with Angular, designed to allow multiple users to efficiently manage their tasks. It integrates local storage for data handling and was created for educational purposes. The app features a clean, modern interface that ensures an intuitive and enjoyable task management experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies used
+* HTML5
+* CSS3
+* Angular
+* TypeScript
+* Faker API
+* Git
 
-## Code scaffolding
+## Instructions for Working with the Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+	1. Open your terminal and run the following command to clone the repository:
+    
+        git clone https://github.com/modeltoIT/easy-task.git
+    
+    2. Move into the project directory:
 
-## Build
+        cd easy-task
+    
+    3. Ensure that Node.js version v20.x.x is installed. Verify this by running:
+    
+        node -v
+    
+        If the version is incorrect, install or update Node.js from Node.js official website.
+        
+    4. Install the necessary project dependencies by running:
+    
+        npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    5. Start the development server with the command:
 
-## Running unit tests
+        npm start
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## View Project
 
-## Running end-to-end tests
+Live Demo: [View the Project](https://modeltoit.github.io/easy-task/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Preview
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Preview](./src/images/preview.png)
