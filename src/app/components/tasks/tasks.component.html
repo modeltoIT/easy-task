@@ -7,12 +7,12 @@
   </header>
 
   @if (isFormOpen) {
-    <app-task-form (close)="onCloseForm()" (submit)="onSumbitForm($event)" />
+    <app-task-form [userId]="selectedUser.id" (close)="onCloseForm()" />
   }
 
   <ul>
-    @for (task of userTasks; track task.id) {
-      <li><app-task [task]="task" (complete) ='onComplete($event)' /></li>
+    @for (task of selectedUserTasks; track task.id) {
+      <li><app-task [task]="task" /></li>
     }
   </ul>
 </section>
