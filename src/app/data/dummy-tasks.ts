@@ -4,17 +4,17 @@ export const DUMMY_TASKS: Task[] = [
   {
     id: 't1',
     userId: 'u1',
-    title: 'Master Angular',
+    title: 'Practice Angular',
     summary:
-      'Learn all the basic and advanced features of Angular & how to apply them.',
-    dueDate: '2025-12-31',
+      'Practice all the basic and advanced features of Angular.',
+    dueDate: '2025-04-05',
   },
   {
     id: 't2',
     userId: 'u3',
     title: 'Build first prototype',
     summary: 'Build a first prototype of the online shop website',
-    dueDate: '2024-05-31',
+    dueDate: '2024-03-31',
   },
   {
     id: 't3',
