@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "essentials": {
+    "easytask": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
